@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Möncher Raumdesign</title>
-    <!-- Assuming ShadCN provides a CSS CDN similar to Bootstrap, it would be linked like this -->
-    <!-- <link href="https://cdn.shadcn.com/css/shadcn.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             padding-top: 56px; /* Ensuring navbar doesn't cover content */
-            scroll-behavior: smooth;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
         }
 
         footer {
@@ -20,27 +20,17 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-        }
-
-        /* Example ShadCN-like classes if provided */
-        .navbar, .navbar-dark, .bg-dark { /* Stand-in for ShadCN styles */
-            background-color: #333 !important;
-            color: #fff;
-        }
-
-        .container { /* Example general styling for containers */
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 15px;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <!-- Hypothetical ShadCN NavBar -->
+    <!-- Bootstrap Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Möncher Raumdesign</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -63,29 +53,29 @@
 
     <main class="container mt-5">
         <section id="about" class="py-4">
-            <h1>Willkommen bei Möncher Raumdesign</h1>
-            <p>Wir spezialisieren uns darauf, Räume in wunderschön gestaltete Umgebungen zu verwandeln.</p>
+            <h1 class="display-4">Willkommen bei Möncher Raumdesign</h1>
+            <p class="lead">Wir spezialisieren uns darauf, Räume in wunderschön gestaltete Umgebungen zu verwandeln, die sowohl ästhetischen Bedürfnissen gerecht werden als auch die Funktionalität steigern.</p>
         </section>
 
         <section id="services" class="py-4">
-            <h2>Unsere Dienstleistungen</h2>
-            <ul>
-                <li>Raumplanung und Layout</li>
-                <li>Innenarchitektur-Beratung</li>
-                <li>Farb- und Materialauswahl</li>
+            <h2 class="display-5">Unsere Dienstleistungen</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Raumplanung und Layout</li>
+                <li class="list-group-item">Innenarchitektur-Beratung</li>
+                <li class="list-group-item">Farb- und Materialauswahl</li>
             </ul>
         </section>
 
         <section id="testimonials" class="py-4">
-            <h2>Was unsere Kunden sagen</h2>
-            <blockquote>
-                <p>"Möncher Raumdesign hat unser Zuhause verwandelt."</p>
-                <footer>Zufriedener Kunde</footer>
+            <h2 class="display-5">Was unsere Kunden sagen</h2>
+            <blockquote class="blockquote">
+                <p class="mb-0">"Möncher Raumdesign hat unser Zuhause mit ihren innovativen Ideen und ihrem professionellen Ansatz verwandelt. Sehr empfehlenswert!"</p>
+                <footer class="blockquote-footer">Zufriedener Kunde</footer>
             </blockquote>
         </section>
 
         <section id="contact" class="py-4">
-            <h2>Kontaktieren Sie uns</h2>
+            <h2 class="display-5">Kontaktieren Sie uns</h2>
             <p>Email: <a href="mailto:info@moencher-raumdesign.de">info@moencher-raumdesign.de</a></p>
         </section>
     </main>
@@ -94,8 +84,10 @@
         <p>&copy; 2025 Möncher Raumdesign. Alle Rechte vorbehalten.</p>
     </footer>
 
-    <!-- Hypothetical ShadCN JavaScript, if required it would be included like this -->
-    <!-- <script src="https://cdn.shadcn.com/js/shadcn.min.js"></script> -->
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
